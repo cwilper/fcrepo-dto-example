@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%p %d{HH:mm:ss.SSS} (%c{0}\\) %m%n</pattern>
+    </encoder>
+  </appender>
+  <!-- Send INFO and above log messages to STDOUT for this application. -->
+  <logger name="com.github.cwilper.fcrepo.dto.example" additivity="false" level="INFO">
+    <appender-ref ref="STDOUT"/>
+  </logger>
+  <!-- For everything else, only send WARN and ERROR messages to STDOUT. -->
+  <root additivity="false" level="WARN">
+    <appender-ref ref="STDOUT"/>
+  </root>
+</configuration>

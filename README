@@ -1,0 +1,8 @@
+Fedora Data Transfer Object Libraries Example
+=============================================
+
+This is an example Maven project that shows how to use the fcrepo-dto libraries.
+
+For more information on the fcrepo-dto libraries, see:
+
+  http://cwilper.github.com/fcrepo-misc/fcrepo-dto/index.html

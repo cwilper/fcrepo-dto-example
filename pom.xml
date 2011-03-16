@@ -1,0 +1,88 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.github.cwilper</groupId>
+  <artifactId>fcrepo-dto-example</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <name>Fedora Data Transfer Object Libraries Example</name>
+  <description>
+    Example code showing the use of the Fedora Data Transfer (fcrepo-dto) libraries.
+  </description>
+
+  <organization>                                                                    
+    <name>DuraSpace</name>                                                          
+    <url>http://duraspace.org/</url>                                                                               
+  </organization>
+  
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+    </license>
+  </licenses>
+
+  <scm>
+    <url>https://github.com/cwilper/fcrepo-dto-example</url>
+    <connection>
+      scm:git:git://github.com/cwilper/fcrepo-dto-example.git
+    </connection>
+    <developerConnection>
+      scm:git:git@github.com:cwilper/fcrepo-dto-example.git
+    </developerConnection>
+  </scm>
+
+  <developers>
+    <developer>
+      <id>cwilper</id>
+      <name>Chris Wilper</name>
+      <email>cwilper@gmail.com</email>
+      <timezone>-5</timezone>
+    </developer>
+  </developers>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
+
+  <dependencies>
+
+    <!--
+      You can choose whatever SLF4J binding you want for your application.
+      In this example, I'm using logback and have put a simple configuration
+      in src/main/resources/logback.xml
+    -->
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>0.9.26</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.github.cwilper.fcrepo-misc</groupId>
+      <artifactId>fcrepo-dto-foxml</artifactId>
+      <version>0.1.0</version>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <plugins>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3.1</version>
+        <configuration>
+          <debug>true</debug>
+          <source>1.6</source>
+          <target>1.6</target>
+        </configuration>
+      </plugin>
+
+    </plugins>
+
+  </build>
+
+</project>
